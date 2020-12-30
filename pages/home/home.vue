@@ -1,7 +1,8 @@
 <template>
 	<view>
 		<view class="banner">
-			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration" indicator-active-color="#517ff3">
+			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration"
+			 indicator-active-color="#517ff3">
 				<swiper-item>
 					<image class="swiper-item" src="../../static/images/banner3.png"></image>
 				</swiper-item>
@@ -13,8 +14,9 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<i class="icon-zhangdan"></i>
-		 <span class="iconfont icon-xiangqingye-07"></span>
+		<svg class="iconfonts icon" aria-hidden="true">
+			<use xlink:href="#icon-zhangdan"></use>
+		</svg>
 		<view class="scroll-wrap">
 			<view class="scroll-tit">公告</view>
 			<swiper class="swiper" circular :vertical="true" :autoplay="autoplay" :interval="interval" :duration="duration">
@@ -131,4 +133,9 @@
 		text-overflow: ellipsis;
 		white-space: nowrap
 	}
+
+	.iconfonts {
+		font-size:100rpx;
+	}
+	
 </style>
