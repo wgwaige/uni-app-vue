@@ -9,7 +9,7 @@
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "Uni-app"
+				"navigationBarTitleText": "首页"
 			}
 		}
 
@@ -23,7 +23,7 @@
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "Uni-app",
+		"navigationBarTitleText": "首页",
 		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#ffffff"
 	},
