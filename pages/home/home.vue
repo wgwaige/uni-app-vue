@@ -14,9 +14,9 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<svg class="iconfonts icon" aria-hidden="true">
+		<!-- <svg class="iconfonts icon" aria-hidden="true">
 			<use xlink:href="#icon-zhangdan"></use>
-		</svg>
+		</svg> -->
 		<view class="scroll-wrap">
 			<view class="scroll-tit">公告</view>
 			<swiper class="swiper" circular :vertical="true" :autoplay="autoplay" :interval="interval" :duration="duration">
@@ -25,6 +25,122 @@
 				</swiper-item>
 			</swiper>
 			<view class="scroll-more" @click="gotoMore()">更多</view>
+		</view>
+		<view class="section-nav">
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-zijinzhuanchu"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">转账</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-zijinzhanghu"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">贷款</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-jijinzhanghu"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">账户</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-zijinjijin"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">基金</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-jijincunchu"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">存款</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-zhangdan"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">账单</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-tiaoyan"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">调研</view>
+			</view>
+			<view class="nav">
+				<view class="nav-icon">
+					<svg class="iconfonts icon" aria-hidden="true">
+						<use xlink:href="#icon-zhanghu"></use>
+					</svg>
+				</view>
+				<view class="nav-tit">账户</view>
+			</view>
+		</view>
+		<view class="interval"></view>
+		<!-- 特殊专区 -->
+		<view class="section">
+			<view class="section-tit">特殊专区</view>
+			<view class="section-more">查看更多</view>
+		</view>
+		<view class="special">
+			<view class="special-left">
+
+			</view>
+			<view class="special-right">
+				<view class="special-gxd"></view>
+				<view class="special-hlb"></view>
+			</view>
+		</view>
+		<!-- 热销产品 -->
+		<view class="section">
+			<view class="section-tit">热销产品</view>
+			<view class="section-more">查看更多</view>
+		</view>
+		<view class="hot-product">
+			<view class="hot-left">
+				<view class="hot-left-pec">5.01%</view>
+				<view class="hot-left-tip">预期年化收益率</view>
+			</view>
+			<view class="hot-right">
+				<view class="hot-right-tit">月月盈</view>
+				<view class="hot-right-ito">活期产品｜定期收益</view>
+			</view>
+		</view>
+		<view class="hot-product">
+			<view class="hot-left">
+				<view class="hot-left-pec">4.80%</view>
+				<view class="hot-left-tip">预期年化收益率</view>
+			</view>
+			<view class="hot-right">
+				<view class="hot-right-tit">幸福盈</view>
+				<view class="hot-right-ito">活期产品｜期限灵活选择多</view>
+			</view>
+		</view>
+		<view class="hot-product">
+			<view class="hot-left">
+				<view class="hot-left-pec">3.98%</view>
+				<view class="hot-left-tip">预期年化收益率</view>
+			</view>
+			<view class="hot-right">
+				<view class="hot-right-tit">周周盈</view>
+				<view class="hot-right-ito">定期｜七天｜自动转存</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -37,10 +153,12 @@
 				interval: 5000,
 				duration: 500,
 				publicList: [{
-						title: "公告栏上下滚动测试"
+						title: "公告栏上下滚动测试",
+						content: "http://www.baidu.com/",
 					},
 					{
-						title: "2222222222"
+						title: "公告栏上下滚动测试222",
+						content: "http://www.baidu.com/",
 					},
 				]
 			}
@@ -55,87 +173,5 @@
 </script>
 
 <style>
-	.banner {
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.banner .swiper {
-		height: 300rpx;
-	}
-
-	.banner .swiper-item {
-		width: 100%;
-		display: block;
-		height: 300rpx;
-		line-height: 300rpx;
-	}
-
-	.banner .swiper-list {
-		margin-top: 40rpx;
-		margin-bottom: 0;
-	}
-
-	.banner .uni-swiper-dots-horizontal {
-		bottom: 0;
-	}
-
-	/* 公告 */
-	.scroll-wrap {
-		display: flex;
-		flex-direction: row;
-		background-color: #FFFFFF;
-		width: 90%;
-		height: 80rpx;
-		line-height: 80rpx;
-		margin-left: 5%;
-		margin-top: 25upx;
-		padding: 0;
-		border-radius: 10upx;
-		justify-content: space-between;
-	}
-
-	.scroll-wrap .scroll-tit {
-		width: 100upx;
-		height: 80rpx;
-		line-height: 80rpx;
-		display: flex;
-		align-items: left;
-		background-color: #FFFFFF;
-		border-radius: 14upx;
-		color: #9152d4;
-		font-weight: bold;
-	}
-
-	.scroll-wrap .scroll-more {
-		width: 100upx;
-		height: 80rpx;
-		line-height: 80rpx;
-		text-align: right;
-		color: #9152d4;
-	}
-
-	.scroll-wrap .swiper {
-		width: 90%;
-		height: 80rpx;
-		background: #FFFFFF;
-		display: flex;
-		flex-direction: column;
-	}
-
-	.scroll-wrap .swiper-item {
-		width: 100%;
-		display: block;
-		height: 80rpx;
-		line-height: 80rpx;
-		text-align: left;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap
-	}
-
-	.iconfonts {
-		font-size:100rpx;
-	}
-	
+	@import url("./home.css");
 </style>

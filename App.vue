@@ -30,4 +30,34 @@
 		fill: currentColor;
 		overflow: hidden;
 	}
+
+	.interval {
+		width: 90%;
+		height: 10px;
+		background: #F1F1F1;
+		margin-left: 5%;
+		display: flex;
+	}
+
+	.section {
+		width: 90%;
+		display: flex;
+		margin: 10px auto 10px auto;
+		flex-flow: row;
+		height: 100rpx;
+		line-height: 100rpx;
+		justify-content: space-between;
+	}
+
+	.section-tit {
+		line-height: 100rpx;
+		font-size: 36rpx;
+		font-weight: 500;
+	}
+
+	.section-more {
+		line-height: 100rpx;
+		font-size: 32rpx;
+		color: #999;
+	}
 </style>
