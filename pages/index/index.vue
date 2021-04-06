@@ -1,19 +1,12 @@
 <template>
-	<view>
-		<view class="banner">
-			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
-				:duration="duration" indicator-active-color="#517ff3">
-				<swiper-item>
-					<image class="swiper-item" src="../../static/images/banner3.png"></image>
-				</swiper-item>
-				<swiper-item>
-					<image class="swiper-item" src="../../static/images/banner2.png"></image>
-				</swiper-item>
-				<swiper-item>
-					<image class="swiper-item" src="../../static/images/banner1.png"></image>
-				</swiper-item>
-			</swiper>
-		</view>
+	<view class="nav-list">
+		<view class="single" @click="gotoHome()">首页</view>
+		<view class="single" @click="gotoQrcode()()">生成二维码</view>
+		<view class="single" @click="">首页</view>
+		<view class="single" @click="">首页</view>
+		<view class="single" @click="">首页</view>
+		<view class="single" @click="">首页</view>
+		<view class="single" @click="">首页</view>
 	</view>
 </template>
 <script>
@@ -30,33 +23,35 @@
 
 		},
 		methods: {
-
+			gotoHome() {
+				uni.navigateTo({
+					url:'../home/home',
+					animationType: 'pop-in'
+				})
+			},
+			gotoQrcode() {
+				uni.navigateTo({
+					url:'../qrcode/qrcode',
+					animationType: 'pop-in'
+				})
+			},
 		}
 	}
 </script>
 <style>
-	.banner {
+	.nav-list {
 		width: 90%;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
 	}
-	
-	.banner .swiper {
-		height: 300rpx;
-	}
-	
-	.banner .swiper-item {
+
+	.single {
 		width: 100%;
-		display: block;
-		height: 300rpx;
-		line-height: 300rpx;
-	}
-	
-	.banner .swiper-list {
-		margin-top: 40rpx;
-		margin-bottom: 0;
-	}
-	
-	.banner .uni-swiper-dots-horizontal {
-		bottom: 0;
+		padding: 5px 0;
+		margin: 5px 0;
+		float: left;
+		text-align: center;
+		background: #f1f1f1;
 	}
 </style>
