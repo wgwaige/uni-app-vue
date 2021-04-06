@@ -22,7 +22,16 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/dataChecker/dataChecker",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "表单验证",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"tabBar": {
 		"color": "#bfbfbf",
 		"selectedColor": "#515151",

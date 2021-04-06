@@ -2,7 +2,7 @@
 	<view class="nav-list">
 		<view class="single" @click="gotoHome()">首页</view>
 		<view class="single" @click="gotoQrcode()()">生成二维码</view>
-		<view class="single" @click="">首页</view>
+		<view class="single" @click="gotodataChecker()">表单验证</view>
 		<view class="single" @click="">首页</view>
 		<view class="single" @click="">首页</view>
 		<view class="single" @click="">首页</view>
@@ -35,6 +35,12 @@
 					animationType: 'pop-in'
 				})
 			},
+			gotodataChecker(){
+				uni.navigateTo({
+					url:'../dataChecker/dataChecker',
+					animationType: 'pop-in'
+				})
+			}
 		}
 	}
 </script>
