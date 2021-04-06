@@ -12,7 +12,6 @@
 	/*每个页面公共css */
 	/* 引入官方css库 */
 	@import "./common/uni.css";
-	@import "./common/iconfont/iconfont.css";
 	/* 引入动画库 */
 	@import "./common/animate.css";
 

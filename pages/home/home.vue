@@ -1,8 +1,8 @@
 <template>
 	<view>
 		<view class="banner">
-			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration"
-			 indicator-active-color="#517ff3">
+			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
+				:duration="duration" indicator-active-color="#517ff3">
 				<swiper-item>
 					<image class="swiper-item" src="../../static/images/banner3.png"></image>
 				</swiper-item>
@@ -19,14 +19,15 @@
 		</svg> -->
 		<view class="scroll-wrap">
 			<view class="scroll-tit">公告</view>
-			<swiper class="swiper" circular :vertical="true" :autoplay="autoplay" :interval="interval" :duration="duration">
+			<swiper class="swiper" circular :vertical="true" :autoplay="autoplay" :interval="interval"
+				:duration="duration">
 				<swiper-item v-for="(item,index) in publicList" :key="index" @click="gotoInfo(item)">
 					<view class="swiper-item">{{item.title}}</view>
 				</swiper-item>
 			</swiper>
 			<view class="scroll-more" @click="gotoMore()">更多</view>
 		</view>
-		<view class="section-nav">
+		<!-- <view class="section-nav">
 			<view class="nav">
 				<view class="nav-icon">
 					<svg class="iconfonts icon" aria-hidden="true">
@@ -92,7 +93,7 @@
 				<view class="nav-tit">账户</view>
 			</view>
 		</view>
-		<view class="interval"></view>
+		<view class="interval"></view> -->
 		<!-- 特殊专区 -->
 		<view class="section">
 			<view class="section-tit">特殊专区</view>
@@ -157,11 +158,14 @@
 						content: "http://www.baidu.com/",
 					},
 					{
-						title: "公告栏上下滚动测试222",
-						content: "http://www.baidu.com/",
+						title: "这个是第一条公告",
+						content: "http://www.taobao.com/",
 					},
 				]
 			}
+		},
+		onPullDownRefresh() {
+
 		},
 		methods: {
 			gotoInfo() {},
