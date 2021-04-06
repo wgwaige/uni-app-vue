@@ -4,22 +4,59 @@
 		//账号状态查询
 		{
 			"path": "pages/home/home",
-			"style": {}
-		},
-		{
-			"path": "pages/home/home",
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
 		}
-
-	],
+	    ,{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "导航",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/qrcode/qrcode",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "二维码生成插件",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"tabBar": {
 		"color": "#bfbfbf",
 		"selectedColor": "#515151",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": []
+		"list": [{
+				"pagePath": "pages/home/home", //页面路径
+				"text": "首页", //tab字体显示
+				"iconPath": "static/images/home_off.png", //未选中tab图标路径
+				"selectedIconPath": "static/images/home_big7.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/fortune/fortune", //页面路径
+				"text": "财富", //tab字体显示
+				"iconPath": "./static/images/home.png", //未选中tab图标路径
+				"selectedIconPath": "static/images/home_big7.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/life/life", //页面路径
+				"text": "生活", //tab字体显示
+				"iconPath": "static/images/home.png", //未选中tab图标路径
+				"selectedIconPath": "static/images/home_big7.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/images/home.png",
+				"selectedIconPath": "static/images/home_big7.png"
+			}
+		]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
