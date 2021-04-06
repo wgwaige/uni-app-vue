@@ -31,6 +31,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/h5-copy/h5-copy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "内容复制",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 		"color": "#bfbfbf",

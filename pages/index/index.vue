@@ -3,7 +3,7 @@
 		<view class="single" @click="gotoHome()">首页</view>
 		<view class="single" @click="gotoQrcode()()">生成二维码</view>
 		<view class="single" @click="gotodataChecker()">表单验证</view>
-		<view class="single" @click="">首页</view>
+		<view class="single" @click="gotoCopy()">内容复制</view>
 		<view class="single" @click="">首页</view>
 		<view class="single" @click="">首页</view>
 		<view class="single" @click="">首页</view>
@@ -25,19 +25,25 @@
 		methods: {
 			gotoHome() {
 				uni.navigateTo({
-					url:'../home/home',
+					url: '../home/home',
 					animationType: 'pop-in'
 				})
 			},
 			gotoQrcode() {
 				uni.navigateTo({
-					url:'../qrcode/qrcode',
+					url: '../qrcode/qrcode',
 					animationType: 'pop-in'
 				})
 			},
-			gotodataChecker(){
+			gotodataChecker() {
 				uni.navigateTo({
-					url:'../dataChecker/dataChecker',
+					url: '../dataChecker/dataChecker',
+					animationType: 'pop-in'
+				})
+			},
+			gotoCopy() {
+				uni.navigateTo({
+					url: '../h5-copy/h5-copy',
 					animationType: 'pop-in'
 				})
 			}
